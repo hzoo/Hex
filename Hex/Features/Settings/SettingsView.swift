@@ -24,8 +24,9 @@ struct SettingsView: View {
 			}
 
 			ModelSectionView(store: store, shouldFlash: store.shouldFlashModelSection)
-			// Only show language picker for WhisperKit models (not Parakeet)
-			if !store.hexSettings.selectedModel.hasPrefix("parakeet-") {
+			// Only show language picker for WhisperKit models (not Parakeet/Nemotron)
+			if !store.hexSettings.selectedModel.hasPrefix("parakeet-")
+				&& store.hexSettings.selectedModel != ParakeetModel.nemotronStreaming.identifier {
 				LanguageSectionView(store: store)
 			}
 

@@ -633,7 +633,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FluidInference/FluidAudio";
 			requirement = {
-				branch = main;
+				branch = "feature/nemotron-streaming-support";
 				kind = branch;
 			};
 		};

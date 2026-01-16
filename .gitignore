@@ -1,4 +1,5 @@
 build/
+.build/
 updates/
 .vscode
 .DS_Store
